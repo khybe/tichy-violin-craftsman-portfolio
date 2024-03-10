@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import Violin from "./Pages/Violin";
@@ -15,15 +15,13 @@ function App() {
         <h1>Header</h1>
       </header>
       <main>
-        <Router>
-          <Routes>
-            <Route path="/" Component={Home} exact />
-            <Route path="/housle" Component={Violin} />
-            <Route path="/viola" Component={Viol} />
-            <Route path="/violoncello" Component={Violoncello} />
-            <Route path="/violadagamba" Component={ViolaDaGamba} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" Component={Home} exact />
+          <Route path="/housle" Component={Violin} />
+          <Route path="/viola" Component={Viol} />
+          <Route path="/violoncello" Component={Violoncello} />
+          <Route path="/violadagamba" Component={ViolaDaGamba} />
+        </Routes>
       </main>
       <footer>
         <p>Footer</p>
