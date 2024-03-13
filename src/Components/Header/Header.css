@@ -1,0 +1,15 @@
+/* Styling for the header element */
+header {
+  display: flex; /* Setting display property to flex */
+  flex-direction: column; /* Setting flex-direction property to column */
+}
+
+/* Styling for unordered lists inside header elements */
+header ul {
+  list-style: none; /* Removing default list-style */
+}
+
+/* Styling for anchor elements inside header elements */
+header a {
+  text-decoration: none; /* Removing underline from anchor elements */
+}

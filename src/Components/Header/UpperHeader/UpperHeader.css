@@ -1,0 +1,108 @@
+/* Styling for elements with class .header-upper */
+.header-upper {
+  width: 100%; /* Setting width to 100% */
+  max-width: 1000px; /* Setting maximum width to 1000px */
+  margin: auto; /* Centering horizontally */
+  margin-top: 25px; /* Setting top margin */
+}
+
+/* Styling for elements with class .logo-container */
+.logo-container {
+  width: 100%; /* Setting width to 100% */
+  display: flex; /* Setting display property to flex */
+  flex-direction: column; /* Setting flex direction to column */
+  align-items: center; /* Aligning items in center */
+}
+
+/* Styling for elements with class .logo-title */
+.logo-title {
+  display: flex; /* Setting display property to flex */
+  flex-direction: column; /* Setting flex direction to column */
+  align-items: center; /* Aligning items in center */
+  margin-top: 20px; /* Setting top margin */
+  font-size: 14px; /* Setting font size */
+  font-style: italic; /* Setting font style to italic */
+  color: #31473a; /* Setting text color */
+}
+
+/* Styling for hr element inside .logo-container */
+.logo-container hr {
+  display: none; /* Hiding horizontal rule */
+}
+
+/* Styling for elements with class .logo-image */
+.logo-image {
+  width: 250px; /* Setting width */
+}
+
+/* Styling for images inside .logo-image */
+.logo-image img {
+  width: 100%; /* Setting width to 100% */
+  max-height: 120px; /* Setting maximum height */
+}
+
+/* Styling for unordered lists inside .header-upper .languages */
+.header-upper .languages ul {
+  position: absolute; /* Positioning absolute */
+  top: 8px; /* Setting top position */
+  right: 15px; /* Setting right position */
+  list-style: none; /* Removing default list style */
+  display: flex; /* Setting display property to flex */
+  gap: 20px; /* Setting gap between items */
+  margin: 0; /* Removing margin */
+  padding: 0; /* Removing padding */
+}
+
+/* Styling for list items inside .header-upper .languages */
+.header-upper .languages li {
+  width: 20px; /* Setting width */
+  cursor: pointer; /* Setting cursor to pointer */
+}
+
+/* Styling for images inside .header-upper .languages */
+.header-upper .languages img {
+  width: 100%; /* Setting width to 100% */
+}
+
+/* Media queries for screen sizes */
+
+@media (min-width: 600px) {
+  .logo-container {
+    flex-direction: row; /* Changing flex direction to row */
+    padding: 35px 25px 10px 25px; /* Setting padding */
+  }
+
+  .logo-title {
+    width: 50%; /* Setting width */
+    margin-top: -48px; /* Adjusting top margin */
+    font-size: 18px; /* Setting font size */
+  }
+
+  .logo-container hr {
+    border: 1px solid rgb(36, 35, 35); /* Setting border */
+    width: 140px; /* Setting width */
+    transform: rotate(90deg); /* Rotating */
+    display: block; /* Displaying horizontal rule */
+  }
+
+  .logo-image {
+    width: 50%; /* Setting width */
+    max-width: 380px; /* Setting maximum width */
+  }
+}
+
+@media (min-width: 900px) {
+  .logo-title {
+    font-size: 22px; /* Changing font size */
+  }
+
+  .header-upper .languages ul {
+    right: 30px; /* Adjusting right position */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-title {
+    font-size: 24px; /* Changing font size */
+  }
+}

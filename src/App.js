@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+import Header from "./Components/Header/Header";
 import Home from "./Pages/Home";
 import Violin from "./Pages/Violin";
 import Viol from "./Pages/Viol";
@@ -11,9 +12,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Header</h1>
-      </header>
+      <Header />
       <main>
         <Routes>
           <Route path="/" Component={Home} exact />

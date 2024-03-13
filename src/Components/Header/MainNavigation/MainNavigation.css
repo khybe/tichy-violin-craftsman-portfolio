@@ -1,0 +1,112 @@
+/* Styles for the main navigation */
+.main-navigation {
+  width: 100%; /* Set width to 100% */
+  max-width: 1300px; /* Set maximum width */
+  margin: auto; /* Center the navigation horizontally */
+  padding: 12px; /* Add padding */
+  position: relative; /* Set position to relative */
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align items to the end of the container */
+  border-top: 3px solid #31473a; /* Add top border */
+  border-bottom: 3px solid #31473a; /* Add bottom border */
+}
+
+/* Styles for the unordered list */
+.main-navigation ul {
+  display: none; /* Hide the navigation links on smaller screens by default */
+}
+
+/* Styles for the mobile menu */
+.main-navigation ul.mobile-menu {
+  display: flex; /* Display the mobile menu by default */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Align items to center */
+  gap: 18px; /* Add gap between items */
+  position: absolute; /* Set position to absolute */
+  top: 55px; /* Adjust the top position as needed */
+  left: 0; /* Align to the left */
+  background-color: white; /* Set background color */
+  width: 100%; /* Set width to 100% */
+  padding: 20px; /* Add padding */
+}
+
+/* Styles for list items */
+.main-navigation ul li {
+  font-weight: 500; /* Set font weight */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Styles for anchor links */
+.main-navigation a {
+  color: #31473a; /* Set text color */
+}
+
+/* Hover styles for anchor links */
+.main-navigation a:hover {
+  font-weight: 700; /* Change font weight on hover */
+}
+
+/* Styles for the mobile toggle button */
+.mobile-toggle-btn {
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styles for the opened menu button */
+.mobile-toggle-btn.open .bar {
+  transform: rotate(-40deg) translate(-5px, 6px); /* Transform the bars for open menu */
+}
+
+.mobile-toggle-btn.open .bar:nth-child(2) {
+  opacity: 0; /* Hide the second bar in the open menu button */
+}
+
+.mobile-toggle-btn.open .bar:last-child {
+  transform: rotate(40deg) translate(-5px, -6px); /* Transform the bars for open menu */
+}
+
+/* Styles for the individual bars of the menu button */
+.bar {
+  width: 25px; /* Width of the bar */
+  height: 3px; /* Height of the bar */
+  background-color: #31473a; /* Color of the bar */
+  margin: 4px 0; /* Spacing between bars */
+  transition: 0.4s; /* Transition duration for animation */
+}
+
+/* Styles for active link */
+.mobile-menu a.active-style::after {
+  background-color: #565454; /* Set background color */
+}
+
+/* Additional styling for active link if needed */
+.active-style {
+  position: relative; /* Set position to relative */
+}
+
+.active-style::after {
+  content: ""; /* Add content */
+  width: 70%; /* Set width */
+  height: 2.5px; /* Set height */
+  border-radius: 4px; /* Set border radius */
+  background-color: #222322; /* Set background color */
+  position: absolute; /* Set position to absolute */
+  top: 25px; /* Position from top */
+  left: 15%; /* Position from left */
+}
+
+/* Media query to adjust styles for larger screens */
+@media (min-width: 769px) {
+  .main-navigation {
+    justify-content: center; /* Align items to center */
+  }
+
+  .main-navigation ul {
+    display: flex; /* Display navigation links */
+    gap: 35px; /* Add gap between items */
+    font-size: 17px; /* Set font size */
+  }
+
+  .mobile-toggle-btn {
+    display: none; /* Hide the mobile toggle on larger screens */
+  }
+}
