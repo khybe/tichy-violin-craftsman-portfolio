@@ -45,7 +45,7 @@
 .header-upper .languages ul {
   position: absolute; /* Positioning absolute */
   top: 8px; /* Setting top position */
-  right: 15px; /* Setting right position */
+  right: 30px; /* Setting right position */
   list-style: none; /* Removing default list style */
   display: flex; /* Setting display property to flex */
   gap: 20px; /* Setting gap between items */

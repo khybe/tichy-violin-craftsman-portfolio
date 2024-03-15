@@ -1,14 +1,14 @@
 import React from "react";
 
 import UpperHeader from "./UpperHeader/UpperHeader"; // Importing UpperHeader component
-import MainNavigation from "./MainNavigation/MainNavigation"; // Importing MainNavigation component
+import MainNavigation from "./Navbar/Navbar"; // Importing MainNavigation component
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ onChangeLanguage, language }) => {
   return (
     <header>
-      <UpperHeader /> {/* Rendering UpperHeader component */}
-      <MainNavigation /> {/* Rendering MainNavigation component */}
+      <UpperHeader changeLanguage={onChangeLanguage} language={language} />
+      <MainNavigation language={language} />
     </header>
   );
 };
