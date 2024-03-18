@@ -2,7 +2,7 @@ import React from "react";
 
 import logoImg from "../../../Assets/images/logo.png"; // Importing logo image
 import czechFlagImg from "../../../Assets/images/czech-flag.png"; // Importing Czech Republic flag image
-import americanFlagImg from "../../../Assets/images/american-flag.png"; // Importing American flag image
+import britishFlagImg from "../../../Assets/images/british-flag.jpg"; // Importing American flag image
 import spanishFlagImg from "../../../Assets/images/spanish-flag.png"; // Importing Spanish flag image
 import frenchFlagImg from "../../../Assets/images/france-flag.png"; // Importing French flag image
 import headerData from "../../../Data/headerData";
@@ -32,7 +32,7 @@ const UpperHeader = ({ changeLanguage, language }) => {
             <img src={czechFlagImg} alt="Czech Republic Flag" />
           </li>
           <li onClick={() => changeLanguage("english")}>
-            <img src={americanFlagImg} alt="American Flag" />
+            <img src={britishFlagImg} alt="British Flag" />
           </li>
           <li onClick={() => changeLanguage("spanish")}>
             <img src={spanishFlagImg} alt="Spanish Flag" />
