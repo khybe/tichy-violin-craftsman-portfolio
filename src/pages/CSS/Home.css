@@ -1,9 +1,7 @@
 /* Mobile-first styles */
 #home {
-  width: 100%;
-  max-width: 1300px;
   padding: 10px;
-  margin: 20px auto;
+  margin: 30px auto;
   color: #283e32;
   text-shadow: 2px 4px 8px rgba(49, 46, 46, 0.1);
 }
