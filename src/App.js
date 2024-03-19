@@ -38,19 +38,19 @@ function App() {
           />
           <Route
             path={`/${formatPath(headerData[selectedLanguage].navLinks[1])}`}
-            Component={Violin}
+            element={<Violin language={selectedLanguage} />}
           />
           <Route
             path={`/${formatPath(headerData[selectedLanguage].navLinks[2])}`}
-            Component={Viola}
+            element={<Viola language={selectedLanguage} />}
           />
           <Route
             path={`/${formatPath(headerData[selectedLanguage].navLinks[3])}`}
-            Component={Violoncello}
+            element={<Violoncello language={selectedLanguage} />}
           />
           <Route
             path={`/${formatPath(headerData[selectedLanguage].navLinks[4])}`}
-            Component={ViolaDaGamba}
+            element={<ViolaDaGamba language={selectedLanguage} />}
           />
         </Routes>
       </main>
