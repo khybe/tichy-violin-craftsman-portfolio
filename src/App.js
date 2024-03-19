@@ -30,7 +30,11 @@ function App() {
       />
       <main>
         <Routes>
-          <Route path="/" Component={Home} exact="true" />
+          <Route
+            path="/"
+            element={<Home language={selectedLanguage} />}
+            exact="true"
+          />
           <Route
             path={`/${formatPath(headerData[selectedLanguage].navLinks[1])}`}
             Component={Violin}
