@@ -7,6 +7,7 @@ import Violin from "./Pages/Violin";
 import Viola from "./Pages/Viola";
 import Violoncello from "./Pages/Violoncello";
 import ViolaDaGamba from "./Pages/ViolaDaGamba";
+import Footer from "./Components/Footer/Footer";
 import headerData from "./Data/headerData";
 
 import "./App.css";
@@ -53,9 +54,7 @@ function App() {
           />
         </Routes>
       </main>
-      <footer>
-        <p>Footer</p>
-      </footer>
+      <Footer language={selectedLanguage} />
     </div>
   );
 }
