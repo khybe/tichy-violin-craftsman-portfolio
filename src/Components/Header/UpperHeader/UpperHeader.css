@@ -62,6 +62,14 @@
 /* Styling for images inside .header-upper .languages */
 .header-upper .languages img {
   width: 100%; /* Setting width to 100% */
+  opacity: 0.8;
+}
+
+.header-upper .languages img.active {
+  opacity: 1;
+  transform: scale(1.2);
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
 /* Media queries for screen sizes */
@@ -97,7 +105,12 @@
   }
 
   .header-upper .languages ul {
-    right: 30px; /* Adjusting right position */
+    right: 35px; /* Adjusting right position */
+    top: 10px;
+  }
+
+  .header-upper .languages li {
+    width: 25px;
   }
 }
 

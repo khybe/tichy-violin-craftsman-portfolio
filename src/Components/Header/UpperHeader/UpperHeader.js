@@ -29,16 +29,32 @@ const UpperHeader = ({ changeLanguage, language }) => {
         {/* Opening div with className languages */}
         <ul>
           <li onClick={() => changeLanguage("czech")}>
-            <img src={czechFlagImg} alt="Czech Republic Flag" />
+            <img
+              className={language === "czech" ? "active" : ""}
+              src={czechFlagImg}
+              alt="Czech Republic Flag"
+            />
           </li>
           <li onClick={() => changeLanguage("english")}>
-            <img src={britishFlagImg} alt="British Flag" />
+            <img
+              className={language === "english" ? "active" : ""}
+              src={britishFlagImg}
+              alt="British Flag"
+            />
           </li>
           <li onClick={() => changeLanguage("spanish")}>
-            <img src={spanishFlagImg} alt="Spanish Flag" />
+            <img
+              className={language === "spanish" ? "active" : ""}
+              src={spanishFlagImg}
+              alt="Spanish Flag"
+            />
           </li>
           <li onClick={() => changeLanguage("french")}>
-            <img src={frenchFlagImg} alt="French Flag" />
+            <img
+              className={language === "french" ? "active" : ""}
+              src={frenchFlagImg}
+              alt="French Flag"
+            />
           </li>
         </ul>
       </div>
