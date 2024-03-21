@@ -1,10 +1,16 @@
 import React from "react";
 
-const ViolaPage = () => {
+import ProductPageWrapper from "../Components/ProductPageWrapper/ProductPageWrapper";
+import ProductDescription from "../Components/ProductDescription/ProductDescription";
+import ProductImages from "../Components/ProductImages/ProductImages";
+import violaPageData from "../Data/violaPageData";
+
+const ViolaPage = ({ language }) => {
   return (
-    <div>
-      <h2>This is Viola page</h2>
-    </div>
+    <ProductPageWrapper>
+      <ProductDescription description={violaPageData[language]} />
+      <ProductImages images={violaPageData.images} />
+    </ProductPageWrapper>
   );
 };
 
