@@ -1,10 +1,16 @@
 import React from "react";
 
-const CelloPage = () => {
+import ProductPageWrapper from "../Components/ProductPageWrapper/ProductPageWrapper";
+import ProductDescription from "../Components/ProductDescription/ProductDescription";
+import ProductImages from "../Components/ProductImages/ProductImages";
+import celloPageData from "../Data/celloPageData";
+
+const CelloPage = ({ language }) => {
   return (
-    <div>
-      <h2>This is Violoncello page</h2>
-    </div>
+    <ProductPageWrapper>
+      <ProductDescription description={celloPageData[language]} />
+      <ProductImages images={celloPageData.images} />
+    </ProductPageWrapper>
   );
 };
 
