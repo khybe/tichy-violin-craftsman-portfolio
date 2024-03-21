@@ -1,0 +1,25 @@
+.gamba-image-container {
+  max-width: 280px;
+}
+
+@media (min-width: 400px) {
+  .gamba-image-container {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 600px) {
+  .gamba-image-container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .gamba-image-container {
+    max-width: 540px;
+  }
+
+  .gamba-image-container {
+    margin-top: 70px;
+  }
+}

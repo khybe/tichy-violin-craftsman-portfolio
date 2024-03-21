@@ -1,10 +1,20 @@
 import React from "react";
 
-const GambaPage = () => {
+import ProductPageWrapper from "../Components/ProductPageWrapper/ProductPageWrapper";
+import ProductDescription from "../Components/ProductDescription/ProductDescription";
+import ProductImages from "../Components/ProductImages/ProductImages";
+import gambaPageData from "../Data/gambaPageData";
+import "./CSS/GambaPage.css";
+
+const GambaPage = ({ language }) => {
   return (
-    <div>
-      <h2>This is Viola Da Gamba page</h2>
-    </div>
+    <ProductPageWrapper>
+      <ProductDescription description={gambaPageData[language]} />
+      <ProductImages
+        images={gambaPageData.images}
+        className="gamba-image-container"
+      />
+    </ProductPageWrapper>
   );
 };
 
