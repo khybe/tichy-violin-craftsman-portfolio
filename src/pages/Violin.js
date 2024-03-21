@@ -1,10 +1,16 @@
 import React from "react";
 
-const Violin = () => {
+import ProductPageWrapper from "../Components/ProductPageWrapper/ProductPageWrapper";
+import violinPageData from "../Data/violinPageData";
+import ProductDescription from "../Components/ProductDescription/ProductDescription";
+import ProductImages from "../Components/ProductImages/ProductImages";
+
+const Violin = ({ language }) => {
   return (
-    <div>
-      <h2>This is Violin page</h2>
-    </div>
+    <ProductPageWrapper>
+      <ProductDescription description={violinPageData[language]} />
+      <ProductImages images={violinPageData.images} />
+    </ProductPageWrapper>
   );
 };
 
