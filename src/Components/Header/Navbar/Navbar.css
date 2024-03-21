@@ -14,6 +14,7 @@
 /* Styles for the unordered list */
 .main-navigation ul {
   display: none; /* Hide the navigation links on smaller screens by default */
+  z-index: 200;
 }
 
 /* Styles for the mobile menu */

@@ -1,6 +1,7 @@
 import React, { useState } from "react"; // Importing React library and useState hook
 import { NavLink } from "react-router-dom"; // Importing NavLink component from react-router-dom
 
+import Backdrop from "../../Backdrop/Backdrop";
 import headerData from "../../../Data/headerData";
 
 import "./Navbar.css";
@@ -80,6 +81,7 @@ const Navbar = ({ language }) => {
         <div className="bar"></div> {/* Div for bar 2 */}
         <div className="bar"></div> {/* Div for bar 3 */}
       </div>
+      {showMobileMenu && <Backdrop onClick={closeMobileMenuHandler} />}
     </nav>
   );
 };
