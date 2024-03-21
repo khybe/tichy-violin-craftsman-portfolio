@@ -1,0 +1,11 @@
+.product-page-wrapper {
+  margin: 80px 20px;
+  color: #283e32;
+  text-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1080px) {
+  .product-page-wrapper {
+    display: flex;
+  }
+}
