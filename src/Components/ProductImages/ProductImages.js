@@ -4,12 +4,11 @@ import "./ProductImages.css";
 const ProductImages = ({ images }) => {
   return (
     <div className="product-images-container">
-      <div className="product-image">
-        <img src={images[0]} alt="Violin" />
-      </div>
-      <div className="product-image">
-        <img src={images[1]} alt="Violin" />
-      </div>
+      {images.map((image, index) => (
+        <div className="product-image" key={index}>
+          <img src={image} alt={`Product ${index}`} />
+        </div>
+      ))}
     </div>
   );
 };
