@@ -1,5 +1,5 @@
 import homePageData from "../Data/homePageData";
-import "./CSS/Home.css";
+import "./CSS/HomePage.css";
 
 const HomePage = ({ language }) => {
   return (
