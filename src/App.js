@@ -2,13 +2,12 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./Components/Header/Header";
-import Home from "./Pages/Home";
-import Violin from "./Pages/Violin";
-import Viola from "./Pages/Viola";
-import Violoncello from "./Pages/Violoncello";
-import ViolaDaGamba from "./Pages/ViolaDaGamba";
+import HomePage from "./Pages/HomePage";
+import ViolinPage from "./Pages/ViolinPage";
+import ViolaPage from "./Pages/ViolaPage";
+import CelloPage from "./Pages/CelloPage";
+import GambaPage from "./Pages/GambaPage";
 import Footer from "./Components/Footer/Footer";
-import headerData from "./Data/headerData";
 
 import "./App.css";
 
@@ -18,10 +17,6 @@ function App() {
   function languageChangeHandler(newLanguage) {
     setSelectedLanguage(newLanguage);
   }
-
-  const formatPath = (path) => {
-    return path.toLowerCase().replace(/\s+/g, "");
-  };
 
   return (
     <div className="App">
@@ -33,24 +28,24 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home language={selectedLanguage} />}
+            element={<HomePage language={selectedLanguage} />}
             exact="true"
           />
           <Route
-            path={`/${formatPath(headerData[selectedLanguage].navLinks[1])}`}
-            element={<Violin language={selectedLanguage} />}
+            path="/housle"
+            element={<ViolinPage language={selectedLanguage} />}
           />
           <Route
-            path={`/${formatPath(headerData[selectedLanguage].navLinks[2])}`}
-            element={<Viola language={selectedLanguage} />}
+            path="/viola"
+            element={<ViolaPage language={selectedLanguage} />}
           />
           <Route
-            path={`/${formatPath(headerData[selectedLanguage].navLinks[3])}`}
-            element={<Violoncello language={selectedLanguage} />}
+            path="violoncello"
+            element={<CelloPage language={selectedLanguage} />}
           />
           <Route
-            path={`/${formatPath(headerData[selectedLanguage].navLinks[4])}`}
-            element={<ViolaDaGamba language={selectedLanguage} />}
+            path="violadagamba"
+            element={<GambaPage language={selectedLanguage} />}
           />
         </Routes>
       </main>

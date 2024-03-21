@@ -1,7 +1,7 @@
 import homePageData from "../Data/homePageData";
 import "./CSS/Home.css";
 
-const Home = ({ language }) => {
+const HomePage = ({ language }) => {
   return (
     <section id="home">
       <div className="home-profile">
@@ -20,4 +20,4 @@ const Home = ({ language }) => {
   );
 };
 
-export default Home;
+export default HomePage;

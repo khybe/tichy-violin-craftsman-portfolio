@@ -5,7 +5,7 @@ import violinPageData from "../Data/violinPageData";
 import ProductDescription from "../Components/ProductDescription/ProductDescription";
 import ProductImages from "../Components/ProductImages/ProductImages";
 
-const Violin = ({ language }) => {
+const ViolinPage = ({ language }) => {
   return (
     <ProductPageWrapper>
       <ProductDescription description={violinPageData[language]} />
@@ -14,4 +14,4 @@ const Violin = ({ language }) => {
   );
 };
 
-export default Violin;
+export default ViolinPage;

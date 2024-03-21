@@ -1,6 +1,6 @@
 import React from "react";
 
-const Viola = () => {
+const ViolaPage = () => {
   return (
     <div>
       <h2>This is Viola page</h2>
@@ -8,4 +8,4 @@ const Viola = () => {
   );
 };
 
-export default Viola;
+export default ViolaPage;

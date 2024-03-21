@@ -18,10 +18,6 @@ const Navbar = ({ language }) => {
     setShowMobileMenu(false);
   };
 
-  const formatPath = (path) => {
-    return path.toLowerCase().replace(/\s+/g, "");
-  };
-
   return (
     <nav className="main-navigation">
       <ul className={showMobileMenu ? "mobile-menu" : ""}>
@@ -35,18 +31,46 @@ const Navbar = ({ language }) => {
             {headerData[language].navLinks[0]}
           </NavLink>
         </li>
-        {headerData[language].navLinks.slice(1).map((link, index) => (
-          <li key={index} onClick={closeMobileMenuHandler}>
-            <NavLink
-              to={`/${formatPath(link)}`}
-              className={(navData) =>
-                navData.isActive ? "active-style" : "none"
-              }
-            >
-              {link}
-            </NavLink>
-          </li>
-        ))}
+        <li onClick={closeMobileMenuHandler}>
+          <NavLink
+            to="/housle"
+            className={(navData) =>
+              navData.isActive ? "active-style" : "none"
+            }
+          >
+            {headerData[language].navLinks[1]}
+          </NavLink>
+        </li>
+        <li onClick={closeMobileMenuHandler}>
+          <NavLink
+            to="/viola"
+            className={(navData) =>
+              navData.isActive ? "active-style" : "none"
+            }
+          >
+            {headerData[language].navLinks[2]}
+          </NavLink>
+        </li>
+        <li onClick={closeMobileMenuHandler}>
+          <NavLink
+            to="/violoncello"
+            className={(navData) =>
+              navData.isActive ? "active-style" : "none"
+            }
+          >
+            {headerData[language].navLinks[3]}
+          </NavLink>
+        </li>
+        <li onClick={closeMobileMenuHandler}>
+          <NavLink
+            to="/violadagamba"
+            className={(navData) =>
+              navData.isActive ? "active-style" : "none"
+            }
+          >
+            {headerData[language].navLinks[4]}
+          </NavLink>
+        </li>
       </ul>
       <div
         className={`mobile-toggle-btn ${showMobileMenu ? "open" : ""}`} // Div for mobile menu toggle button with conditional className

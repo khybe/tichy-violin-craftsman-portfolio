@@ -7,17 +7,17 @@ const headerData = {
   english: {
     name: "ROBERT TICHY",
     title: "VIOLIN MAKER",
-    navLinks: ["HOME", "VIOLINS", "VIOLA", "CELLO", "VIOLA DA GAMBA"],
+    navLinks: ["HOME", "VIOLIN", "VIOLA", "CELLO", "VIOLA DA GAMBA"],
   },
   spanish: {
     name: "ROBERT TICHY",
     title: "FABRICANTE DE VIOLINES",
-    navLinks: ["INICIO", "VIOLINES", "VIOLA", "VIOLONCHELO", "VIOLA DA GAMBA"],
+    navLinks: ["INICIO", "VIOLÍN", "VIOLA", "VIOLONCHELO", "VIOLA DA GAMBA"],
   },
   french: {
     name: "ROBERT TICHY",
     title: "FACTEUR DE VIOLON",
-    navLinks: ["ACCUEIL", "VIOLONS", "ALTO", "VIOLONCELLE", "VIOLE DE GAMBE"],
+    navLinks: ["ACCUEIL", "VIOLON", "ALTO", "VIOLONCELLE", "VIOLE DE GAMBE"],
   },
 };
 

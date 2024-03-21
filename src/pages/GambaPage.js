@@ -1,6 +1,6 @@
 import React from "react";
 
-const ViolaDaGamba = () => {
+const GambaPage = () => {
   return (
     <div>
       <h2>This is Viola Da Gamba page</h2>
@@ -8,4 +8,4 @@ const ViolaDaGamba = () => {
   );
 };
 
-export default ViolaDaGamba;
+export default GambaPage;
