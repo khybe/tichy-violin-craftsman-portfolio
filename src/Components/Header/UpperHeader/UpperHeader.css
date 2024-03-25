@@ -87,10 +87,11 @@
   }
 
   .logo-container hr {
-    border: 1px solid rgb(36, 35, 35); /* Setting border */
-    width: 140px; /* Setting width */
+    border: 1.6px solid #283e32; /* Setting border */
+    width: 155px; /* Setting width */
     transform: rotate(90deg); /* Rotating */
     display: block; /* Displaying horizontal rule */
+    border-radius: 4px;
   }
 
   .logo-image {
