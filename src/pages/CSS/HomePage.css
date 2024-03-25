@@ -12,10 +12,10 @@
   gap: 25px;
   max-width: 600px;
   margin: 20px auto;
+  text-align: center;
 }
 
 .home-profile h2 {
-  text-align: center;
   font-style: italic;
 }
 
@@ -31,14 +31,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
+}
+
+.home-image-item {
+  background: radial-gradient(circle, #ffffff, #15333c45 70%, #010e1245);
 }
 
 .home-image-item img {
   width: 100%;
   max-width: 138px;
   height: 100%;
-  border-radius: 2px;
+  border: 2px solid #283e32;
+  border-radius: 3px;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Media query for medium screens */
@@ -68,7 +74,7 @@
 }
 
 /* Media query for large screens */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   #home {
     display: flex;
     gap: 40px;
