@@ -1,19 +1,19 @@
 import homeImage1 from "../Assets/images/home-image-1.jpg";
-import homeImage2 from "../Assets/images/home-image-2.jpg";
-import homeImage3 from "../Assets/images/home-image-3.jpg";
-import homeImage4 from "../Assets/images/home-image-4.jpg";
-import homeImage5 from "../Assets/images/home-image-5.jpg";
-import homeImage6 from "../Assets/images/home-image-6.jpg";
-import homeImage7 from "../Assets/images/home-image-7.jpg";
-import homeImage8 from "../Assets/images/home-image-8.jpg";
-import homeImage9 from "../Assets/images/home-image-9.jpg";
-import homeImage10 from "../Assets/images/home-image-10.jpg";
-import homeImage11 from "../Assets/images/home-image-11.jpg";
+import homeImage2 from "../Assets/images/home-image-2.png";
+import homeImage3 from "../Assets/images/home-image-3.png";
+import homeImage4 from "../Assets/images/home-image-4.png";
+import homeImage5 from "../Assets/images/home-image-5.png";
+import homeImage6 from "../Assets/images/home-image-6.png";
+import homeImage7 from "../Assets/images/home-image-7.png";
+import homeImage8 from "../Assets/images/home-image-8.png";
+import homeImage9 from "../Assets/images/home-image-9.png";
+import homeImage10 from "../Assets/images/home-image-10.png";
+import homeImage11 from "../Assets/images/home-image-11.png";
 
 const homePageData = {
   czech: {
     title: "Robert Tichý – Výroba houslí",
-    text: "Dobrý den, jmenuji se Robert Tichý a jsem pokračovatelem houslařské rodinné tradice již ve druhé generaci. Nabízím vám své housle, viole, violoncella a viole da gamba, ve kterých se snoubí tradice a vášeň pro řemeslo.",
+    text: "Dobrý den, jmenuji se Robert Tichý a jsem pokračovatelem houslařské rodinné tradice již ve druhé generaci. Nabízím vám své housle, violy, violoncella a violy da gamba, ve kterých se snoubí tradice a vášeň pro řemeslo.",
     seoKeywords: "Objevte krásné nástroje vyrobené s pečlivostí a láskou.",
   },
   english: {
