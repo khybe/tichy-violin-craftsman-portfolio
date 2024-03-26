@@ -5,7 +5,7 @@ import violaImage3 from "../Assets/images/viola-image-3.jpg";
 // Data for the viola page including descriptions in multiple languages and images
 const violaPageData = {
   czech:
-    "viola podle vzoru Gerolama Amatiho „La Stauffer“ z roku 1615\nTeplý a harmonický tón této viole je také díky použitému topolovému dřevu spodní desky a boků.",
+    "viola podle vzoru Gerolama Amatiho „La Stauffer“ z roku 1615\nTeplý a harmonický tón této violy je také díky použitému topolovému dřevu spodní desky a boků.",
   english:
     'viola pattern after Gerolamo Amati "La Stauffer" from 1615\nThe warm and harmonious tone of this viola is also thanks to the poplar wood used for the bottom plate and sides.',
   spanish:
