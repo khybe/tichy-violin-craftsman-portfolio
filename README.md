@@ -2,6 +2,10 @@
 
 This project is a portfolio website showcasing the craftsmanship of a violin maker specializing in crafting Violin, Viola, Cello, and Viola da Gamba instruments. The website provides information about the maker's instruments and services in Czech, English, Spanish, and French.
 
+## Project Background
+
+This project was initiated based on a rough sketch provided by the customer, requiring an iterative approach to development.
+
 ## Project Structure
 
 - **Components**: Reusable React components.
