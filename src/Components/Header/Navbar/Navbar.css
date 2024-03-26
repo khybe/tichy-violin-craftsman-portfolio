@@ -74,6 +74,10 @@
   transition: 0.4s; /* Transition duration for animation */
 }
 
+.main-navigation a.active-style {
+  text-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Styles for active link */
 .mobile-menu a.active-style::after {
   background-color: #565454; /* Set background color */

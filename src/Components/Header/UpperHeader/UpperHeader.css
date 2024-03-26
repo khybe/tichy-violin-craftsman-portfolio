@@ -23,6 +23,7 @@
   font-size: 14px; /* Setting font size */
   font-style: italic; /* Setting font style to italic */
   color: #31473a; /* Setting text color */
+  text-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for hr element inside .logo-container */
