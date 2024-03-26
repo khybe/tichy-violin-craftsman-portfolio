@@ -46,6 +46,4 @@ This project is open-source under the [MIT License](./LICENSE). However, please 
 
 ---
 
-_For more information, visit the [repository link](#)._
-
 © 2024 Khaibar Saadat. All rights reserved.
