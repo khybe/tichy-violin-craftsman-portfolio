@@ -24,3 +24,7 @@ yarn-error.log*
 
 # Ignore VSCode settings file
 .vscode/settings.json
+
+# Ignore Firebase configuration files
+.firebaserc
+firebase.json
