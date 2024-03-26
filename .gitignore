@@ -26,5 +26,6 @@ yarn-error.log*
 .vscode/settings.json
 
 # Ignore Firebase configuration files
+.firebase
 .firebaserc
 firebase.json
