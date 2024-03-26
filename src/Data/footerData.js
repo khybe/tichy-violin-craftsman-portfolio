@@ -1,4 +1,4 @@
-// footerData.js
+// Data for the footer including information in different languages
 const footerData = {
   czech: {
     email: "Email",

@@ -9,7 +9,9 @@ import "./CSS/GambaPage.css";
 const GambaPage = ({ language }) => {
   return (
     <ProductPageWrapper>
+      {/* Displaying product description based on selected language */}
       <ProductDescription description={gambaPageData[language]} />
+      {/* Displaying product images with custom class */}
       <ProductImages
         images={gambaPageData.images}
         className="gamba-image-container"

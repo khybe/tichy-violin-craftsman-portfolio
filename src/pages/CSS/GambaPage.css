@@ -17,9 +17,6 @@
 @media (min-width: 1080px) {
   .gamba-image-container {
     max-width: 540px;
-  }
-
-  .gamba-image-container {
-    margin-top: 70px;
+    margin-top: 70px; /* Added margin-top for extra-large screens */
   }
 }

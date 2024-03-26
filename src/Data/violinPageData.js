@@ -2,6 +2,7 @@ import violinImage1 from "../Assets/images/violin-image-1.jpg";
 import violinImage2 from "../Assets/images/violin-image-2.jpg";
 import violinImage3 from "../Assets/images/violin-image-3.jpg";
 
+// Data for the violin page including descriptions in multiple languages and images
 const violinPageData = {
   czech:
     "Housle podle vzoru Guarneri del Gesú 'Plowden' z roku 1735\nSmrkové dřevo na nástroje hledám v italských a rakouských Alpách.\nJavorové dřevo je převážne z Bosny a Černé Hory.",
@@ -11,7 +12,7 @@ const violinPageData = {
     "Violín según el modelo Guarneri del Gesú 'Plowden' de 1735\nBusco madera de abeto para instrumentos en los Alpes italianos y austríacos.\nLa madera de arce procede principalmente de Bosnia y Montenegro.",
   french:
     "Violon sur le modèle de Guarneri del Gesú 'Plowden' de 1735\nJe recherche du bois d'épicéa pour instruments dans les Alpes italiennes et autrichiennes.\nLe bois d'érable provient principalement de Bosnie et du Monténégro.",
-  images: [violinImage1, violinImage2, violinImage3],
+  images: [violinImage1, violinImage2, violinImage3], // Array of images for the violin page
 };
 
 export default violinPageData;

@@ -1,14 +1,15 @@
 import React from "react";
 
-import logoImg from "../../../Assets/images/logo.png"; // Importing logo image
-import czechFlagImg from "../../../Assets/images/czech-flag.png"; // Importing Czech Republic flag image
-import britishFlagImg from "../../../Assets/images/british-flag.jpg"; // Importing American flag image
-import spanishFlagImg from "../../../Assets/images/spanish-flag.png"; // Importing Spanish flag image
-import frenchFlagImg from "../../../Assets/images/france-flag.png"; // Importing French flag image
+import logoImg from "../../../Assets/images/logo.png";
+import czechFlagImg from "../../../Assets/images/czech-flag.png";
+import britishFlagImg from "../../../Assets/images/british-flag.jpg";
+import spanishFlagImg from "../../../Assets/images/spanish-flag.png";
+import frenchFlagImg from "../../../Assets/images/france-flag.png";
 import headerData from "../../../Data/headerData";
 
 import "./UpperHeader.css";
 
+// Component for upper section of the header including logo and language selection
 const UpperHeader = ({ changeLanguage, language }) => {
   const { name, title } = headerData[language];
 
@@ -16,17 +17,15 @@ const UpperHeader = ({ changeLanguage, language }) => {
     <div className="header-upper">
       <div className="logo-container">
         <div className="logo-title">
-          <h2>{name}</h2> {/* Rendering h2 element */}
-          <h3>{title}</h3> {/* Rendering h3 element */}
+          <h2>{name}</h2>
+          <h3>{title}</h3>
         </div>
-        <hr /> {/* Rendering horizontal rule */}
+        <hr />
         <div className="logo-image">
-          <img src={logoImg} alt="Logo" />{" "}
-          {/* Rendering image with src and alt attributes */}
+          <img src={logoImg} alt="Logo" />
         </div>
       </div>
       <div className="languages">
-        {/* Opening div with className languages */}
         <ul>
           <li onClick={() => changeLanguage("czech")}>
             <img
@@ -62,4 +61,4 @@ const UpperHeader = ({ changeLanguage, language }) => {
   );
 };
 
-export default UpperHeader; // Exporting UpperHeader component
+export default UpperHeader;

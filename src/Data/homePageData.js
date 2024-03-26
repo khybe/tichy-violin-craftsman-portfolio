@@ -10,6 +10,7 @@ import homeImage9 from "../Assets/images/home-image-9.png";
 import homeImage10 from "../Assets/images/home-image-10.png";
 import homeImage11 from "../Assets/images/home-image-11.png";
 
+// Data for the home page including title, text, SEO keywords, and grid images
 const homePageData = {
   czech: {
     title: "Robert Tichý – Výroba houslí",
@@ -44,7 +45,7 @@ const homePageData = {
     homeImage9,
     homeImage10,
     homeImage11,
-  ],
+  ], // Array of images for the grid on the home page
 };
 
 export default homePageData;

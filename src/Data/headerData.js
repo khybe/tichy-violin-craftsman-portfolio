@@ -1,3 +1,4 @@
+// Header data containing information for different languages
 const headerData = {
   czech: {
     name: "ROBERT TICHÝ",

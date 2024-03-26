@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductImages.css";
 
+// Component for displaying product images
 const ProductImages = ({ images, className }) => {
   return (
     <div className="product-images-container">

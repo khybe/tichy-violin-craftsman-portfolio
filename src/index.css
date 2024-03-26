@@ -1,9 +1,16 @@
+/*
+  Resets default margin, padding, and box-sizing properties for all elements.
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*
+  Styles the body element to have a maximum width of 1300px, centered horizontally,
+  and applies font styles using the "Poppins" font family.
+*/
 body {
   width: 100%;
   max-width: 1300px;

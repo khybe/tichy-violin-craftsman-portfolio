@@ -6,6 +6,7 @@ import headerData from "../../../Data/headerData";
 
 import "./Navbar.css";
 
+// Component for navigation bar including mobile menu
 const Navbar = ({ language }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false); // Declaring state variable to manage mobile menu visibility
 
@@ -22,6 +23,7 @@ const Navbar = ({ language }) => {
   return (
     <nav className="main-navigation">
       <ul className={showMobileMenu ? "mobile-menu" : ""}>
+        {/* Iterating over navigation links */}
         <li onClick={closeMobileMenuHandler}>
           <NavLink
             to="/"
@@ -73,14 +75,16 @@ const Navbar = ({ language }) => {
           </NavLink>
         </li>
       </ul>
+      {/* Mobile menu toggle button */}
       <div
-        className={`mobile-toggle-btn ${showMobileMenu ? "open" : ""}`} // Div for mobile menu toggle button with conditional className
-        onClick={toggleMobileMenuHandler} // Click handler for toggling mobile menu
+        className={`mobile-toggle-btn ${showMobileMenu ? "open" : ""}`}
+        onClick={toggleMobileMenuHandler}
       >
         <div className="bar"></div> {/* Div for bar 1 */}
         <div className="bar"></div> {/* Div for bar 2 */}
         <div className="bar"></div> {/* Div for bar 3 */}
       </div>
+      {/* Backdrop for mobile menu */}
       {showMobileMenu && <Backdrop onClick={closeMobileMenuHandler} />}
     </nav>
   );

@@ -9,27 +9,29 @@ import CelloPage from "./Pages/CelloPage";
 import GambaPage from "./Pages/GambaPage";
 import Footer from "./Components/Footer/Footer";
 
-import "./App.css";
-
 function App() {
+  // State to manage selected language
   const [selectedLanguage, setSelectedLanguage] = useState("czech");
 
+  // Function to handle language change
   function languageChangeHandler(newLanguage) {
     setSelectedLanguage(newLanguage);
   }
 
   return (
-    <div className="App">
+    <div>
+      {/* Header component with language change functionality */}
       <Header
         onChangeLanguage={languageChangeHandler}
         language={selectedLanguage}
       />
       <main>
+        {/* Routing for different pages */}
         <Routes>
           <Route
             path="/"
             element={<HomePage language={selectedLanguage} />}
-            exact="true"
+            exact={true}
           />
           <Route
             path="/housle"
@@ -40,15 +42,16 @@ function App() {
             element={<ViolaPage language={selectedLanguage} />}
           />
           <Route
-            path="violoncello"
+            path="/violoncello"
             element={<CelloPage language={selectedLanguage} />}
           />
           <Route
-            path="violadagamba"
+            path="/violadagamba"
             element={<GambaPage language={selectedLanguage} />}
           />
         </Routes>
       </main>
+      {/* Footer component */}
       <Footer language={selectedLanguage} />
     </div>
   );

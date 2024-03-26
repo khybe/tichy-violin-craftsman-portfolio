@@ -1,8 +1,8 @@
-// Footer.js
 import React from "react";
 import "./Footer.css";
 import footerData from "../../Data/footerData";
 
+// Component for displaying the footer section including contact information and copyright details
 const Footer = ({ language }) => {
   const data = footerData[language];
 

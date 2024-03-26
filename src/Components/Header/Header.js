@@ -4,6 +4,7 @@ import UpperHeader from "./UpperHeader/UpperHeader"; // Importing UpperHeader co
 import Navbar from "./Navbar/Navbar"; // Importing MainNavigation component
 import "./Header.css";
 
+// Component for the header section including upper header and navigation bar
 const Header = ({ onChangeLanguage, language }) => {
   return (
     <header>
