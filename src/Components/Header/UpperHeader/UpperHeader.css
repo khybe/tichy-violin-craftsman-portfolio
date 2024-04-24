@@ -1,7 +1,7 @@
 /* Styling for elements with class .header-upper */
 .header-upper {
   width: 100%; /* Setting width to 100% */
-  max-width: 1000px; /* Setting maximum width to 1000px */
+  max-width: 850px; /* Setting maximum width to 1000px */
   margin: auto; /* Centering horizontally */
   margin-top: 25px; /* Setting top margin */
 }
@@ -82,7 +82,8 @@
 
   .logo-title {
     width: 50%; /* Setting width */
-    margin-top: -48px; /* Adjusting top margin */
+    margin-top: -35px; /* Adjusting top margin */
+    padding-left: 14px;
     font-size: 18px; /* Setting font size */
   }
 
@@ -100,9 +101,16 @@
   }
 }
 
+@media (min-width: 750px) {
+  .logo-title {
+    font-size: 20px;
+    padding-left: 70px;
+  }
+}
+
 @media (min-width: 900px) {
   .logo-title {
-    font-size: 22px; /* Changing font size */
+    font-size: 24px; /* Changing font size */
   }
 
   .header-upper .languages ul {
@@ -112,11 +120,5 @@
 
   .header-upper .languages li {
     width: 25px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .logo-title {
-    font-size: 24px; /* Changing font size */
   }
 }
